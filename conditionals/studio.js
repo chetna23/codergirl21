@@ -1,6 +1,8 @@
 // Declare and initialize the 12 variables here:
-//let input = require('readline-sync');
-//let astronautCount = Number(input.question('How many astronauts?: '));
+// let input = require('readline-sync');
+// let test = input.prompt();
+// console.log('test: ', test);
+// let astronautCount = Number(input.question('How many astronauts?: '));
 let date = 'Monday 2019-03-18';
 let time = '10:05:34 AM';
 let astronautCount = 7;
