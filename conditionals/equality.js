@@ -1,0 +1,9 @@
+console.log(7 == "7");
+console.log(0 == false);
+console.log(0 == '');
+console.log('0' == 0);
+console.log(0 == '');
+console.log('0' == '');
+console.log(7 === "7");
+console.log(0 === false);
+console.log(0 === '');
