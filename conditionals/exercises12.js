@@ -1,5 +1,5 @@
-let engineIndicatorLight = 'green';
-// let engineIndicatorLight = 'green blinking';
+// let engineIndicatorLight = 'green';
+let engineIndicatorLight = 'green blinking';
 // let engineIndicatorLight = 'red blinking';
 let spaceSuitsOn = true;
 let shuttleCabinReady = true;

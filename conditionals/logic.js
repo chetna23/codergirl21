@@ -1,11 +1,11 @@
-let weeklyPay = 600;
+// let weeklyPay = 600;
 
-let dailyEarnings = weeklyPay / 7;
-console.log(dailyEarnings);
+// let dailyEarnings = weeklyPay / 6;
+// console.log(dailyEarnings);
 
-// const input = require('readline-sync');
+const input = require('readline-sync');
 
-// let degreesC = input.question('Temp in degrees C:');
-// let degreesK = degreesC + 273.15;
+let degreesC = Number(input.question('Temp in degrees C:'));
+let degreesK = degreesC + 273.15;
 
-// console.log('Degrees K:', degreesK);
+console.log('Degrees K:', degreesK);
