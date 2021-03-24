@@ -2,9 +2,9 @@ let dna = " TCG-TAC-gaC-TAC-CGT-CAG-ACT-TAa-CcA-GTC-cAt-AGA-GCT    ";
 dna = (dna.trim()).toUpperCase();
 console.log(dna);
 
-console.log(dna.replace('GCT', 'AGG'));
+// console.log(dna.replace('GCT', 'AGG'));
 dna = dna.replace('GCT', 'AGG');
-console.log(dna);
+// console.log(dna);
 
 if(dna.indexOf('CAT') !== -1) {
     console.log('CAT found');

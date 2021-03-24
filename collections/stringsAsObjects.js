@@ -20,9 +20,9 @@
 
 // console.log(nonprofit);
 
-// let pet = 'cat'
-// //why do the statements NOT violate the immutability of strings?
+let pet = 'cat'
+//why do the statements NOT violate the immutability of strings?
 
-// console.log(pet + 's'); 
-// pet += 's';
-// console.log(pet);
+console.log(pet + 's'); 
+pet += 's';
+console.log(pet);

@@ -7,3 +7,5 @@ console.log(lang.slice(0,1) + lang.slice(4, 5));
 console.log(`The abbreviation for JavaScript is ${lang[0]}${lang[4]}`);
 
 //Just for fun, try chaining 3 or more methods together, and then print the result.
+
+console.log(lang.substring(lang.indexOf('J'), lang.indexOf('S')).toUpperCase().trim());

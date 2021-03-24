@@ -5,16 +5,20 @@ element26 = ['iron', 'Fe', 55.85];
 let table = [];
 table.push(element1, element2, element26);
 
-console.log(table);
+// console.log(table);
 
-console.log(table[1]);
+// console.log(table[1]);
 
-console.log(table[1][1]);
+// console.log(table[1][1]);
 
-console.log(table[0][2]);
+// console.log(table[0][2]);
 
-console.log(table[1][0]);
+// console.log(table[1][0]);
 
-console.log(table[2][1]);
+// console.log(table[2][1]);
 
 //3 dimensional array
+
+let myArr = [[["1", "2"], ["2", "2"], ["3", "4"]]];
+
+console.log(myArr[0][2][0]);

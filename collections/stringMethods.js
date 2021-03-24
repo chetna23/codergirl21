@@ -3,14 +3,14 @@
 // console.log(nonprofit.toLowerCase());
 // console.log(nonprofit);
 
-// let language = "JavaScript";
-// language.replace('J', 'Q');
-// language.slice(0,5);
-// console.log(language);
+let language = "JavaScript";
+console.log(language.replace('J', 'Q'));
+language.slice(0,5);
+console.log(language);
 
 // console.log(language.slice(1,6));
 
-let org = "  The LaunchCode Foundation ";
-let trimmed = org.trim();
-
-console.log(trimmed);
+// let org = "  The LaunchCode Foundation ";
+// let trimmed = org.trim();
+// console.log(org);
+// console.log(trimmed);

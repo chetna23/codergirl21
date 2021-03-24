@@ -1,9 +1,9 @@
-let person = "Jack";
-let currentAge = 9;
+// let person = "Jack";
+// let currentAge = 9;
 
-console.log("Next year, " + person + " will be " + (currentAge + 1) + ".");
+// console.log("Next year, " + person + " will be " + (currentAge + 1) + ".");
 
-console.log(`Next year, ${person} will be ${currentAge + 1}.`);
+// console.log(`Next year, ${person} will be ${currentAge + 1}.`);
 
 //While normal strings are enclosed in single or double quotes (' or "), 
 //template literals are enclosed in back-tick characters, 
@@ -18,7 +18,7 @@ All-where.
 
 – Sri Chinmoy`;
 
-// console.log(poem);
+console.log(poem);
 
 // let pluralNoun = ;
 // let name = ;
