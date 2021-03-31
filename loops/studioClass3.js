@@ -1,9 +1,9 @@
 
 // Remove the first three characters from a string and add them to the end. Ex: 'LaunchCode' becomes 'nchCodeLau'. Use a template literal to print the original and modified string in a descriptive phrase.
-let person = 'Arianna';
+// let person = 'LaunchCode';
 // let modified = person.slice(3,7) + person.slice(0,3);
-let modified = person.slice(3,person.length) + person.slice(0,3);
-console.log(`name is ${person} and modified name is ${modified}`);
+// let modified = person.slice(3,person.length) + person.slice(0,3);
+// console.log(`name is ${person} and modified name is ${modified}`);
 
 // Modify your code to accept user input. Query the user to enter the number of letters that will be relocated.
 // Add validation to your code to deal with user inputs that are longer than the word. In such cases, default to moving 3 characters. Also, the template literal should note the error.
@@ -32,7 +32,7 @@ console.log(`name is ${person} and modified name is ${modified}`);
 // let demo = 'Gym;Art;Television;Walks';
 // let demo = 'Gym Art Television Walks';
 // let demo = 'Gym, Art, Television, Walks';
-let demo = 'up,to,code,fun'
+// let demo = 'up,to,code,fun'
 // If the string uses commas to separate the words, split it into an array, 
 // reverse the entries, and then join the array into a new comma separated string.
 let demoArray;
@@ -44,9 +44,9 @@ if(demo.includes(', ')) {
 }
  else if(demo.includes(',')) {
     demoArray = demo.split(',');
-    console.log(demoArray);
-    demoModified = demoArray.reverse();
-    console.log(demoModified.join(','));
+    // console.log(demoArray);
+    demoModified = demoArray.reverse().join(',');
+    // console.log(demoModified.join(','));
 }
 // If the string uses semicolons to separate the words, split it into an array, 
 // alphabetize the entries, and then join the array into a new comma separated string.
@@ -62,6 +62,7 @@ else if(demo.includes(' ')) {
     demoArray = demo.split(' ');
     demoModified = demoArray.sort().reverse().join(' ');
 }
+console.log(demo);
 console.log(demoModified);
 // Consider: What if the string uses 'comma spaces' (, ) to separate the list? 
 // Modify your code to produce the same result as part "b", making sure that the extra spaces are 

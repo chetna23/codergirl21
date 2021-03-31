@@ -6,28 +6,25 @@
 
 let food = 'water bottles, meal packs, snacks, chocolate';
 let foodCabinet = food.split(', ').sort();
-// console.log(foodCabinet);
+console.log(foodCabinet);
 
 let equipment = 'space suits, jet packs, tool belts, thermal detonators';
 let equipmentCabinet = equipment.split(', ').sort();
-// console.log(equipmentCabinet);
+console.log(equipmentCabinet);
 
 let animals = 'parrots, cats, moose, alien eggs';
 let animalsCabinet = animals.split(', ').sort();
-// console.log(animalsCabinet);
+console.log(animalsCabinet);
 
 let gear = 'blankets, pillows, eyepatches, alarm clocks';
 let gearCabinet = gear.split(', ').sort();
-// console.log(gearCabinet);
+console.log(gearCabinet);
 
 // Initialize a cargoHold array and add the cabinet arrays to it. 
 //Print cargoHold to verify its structure.
 
 let cargoHold = [];
-cargoHold.push(foodCabinet);
-cargoHold.push(equipmentCabinet);
-cargoHold.push(animalsCabinet);
-cargoHold.push(gearCabinet);
+cargoHold.push(foodCabinet, equipmentCabinet,animalsCabinet, gearCabinet);
 
 console.log(cargoHold);
 
@@ -40,7 +37,7 @@ let num = input.question('Which cabinet number would u like to see the contents 
 if(num < 0 || num > 3) {
     console.log('Not a valid cabinet number');
 }
-else console.log(`Contents of cabinet are ${cargoHold[num]}`);
+// else console.log(`Contents of cabinet are ${cargoHold[num]}`);
 
 // Bonus to the Bonus: Modify the code to query the user for BOTH a cabinet in 
 //cargoHold AND a particular item. Use the includes method to check if the cabinet contains 
