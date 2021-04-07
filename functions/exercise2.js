@@ -75,16 +75,3 @@ function checkFuel(level) {
  }
 
  irs(fuelLevel, cargoHold);
-
- let deckMops = function(array) {
-    let swagArr = [];
-    let lootList = ['dilithium', 'gold', 'AE-35 unit', 'Legos', 'TI-89 calculator'];
-    for (let i = 0; i < lootList.length; i++) {
-      let lootIndex = array.indexOf(lootList[i]);
-      if (lootIndex >= 0) {
-        swagArr.push(array[lootIndex]);
-        array[lootIndex] = 'junk';
-      }
-    }
-    return swagArr;
-  };
