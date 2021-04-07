@@ -6,18 +6,18 @@ function makeLine(size) {
     return display;
 }
 
-console.log(makeLine(5));
+// console.log(makeLine(5));
 
-function makeDownwardStairs(height) {
-let display = '';
- for( let i = 1; i <= height; i++) {
-    display += makeLine(i);
-    if( i < height) {
-        display += '\n';
-    }
- }
- return display;
-}
+// function makeDownwardStairs(height) {
+// let display = '';
+//  for( let i = 1; i <= height; i++) {
+//     display += makeLine(i);
+//     if( i < height) {
+//         display += '\n';
+//     }
+//  }
+//  return display;
+// }
 
 // console.log(makeDownwardStairs(5));
 
@@ -57,15 +57,19 @@ function makeDiamond(height) {
     return display;
 }
 
-console.log(makeDiamond(5));
+// console.log(makeDiamond(5));
 
-//Bonus
-function makeLine(size, alpha = '#') {
+// //Bonus
+function makeLine(size = 5) {
+    console.log('inital value of alpha is', alpha);
+    // if (!alpha) {
+    //     alpha = '#';
+    // }
     let display = '';
     for(let i = 0; i < size; i++) {
-        display += alpha;
+        display += '#';
     }
     return display;
 }
 
-console.log(makeLine(5, '?'));
+console.log(makeLine());

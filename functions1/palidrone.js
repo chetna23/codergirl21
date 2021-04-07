@@ -7,7 +7,7 @@ function reverse(str) {
  }
 
  console.log(isPalindrome('anna'));
-//  function isPalindrome(str) {
-//     let reversed = str.split('').reverse().join('');
-//     return reversed === str;
-//  }
+ function isPalindrome(str) {
+    let reversed = str.split('').reverse().join('');
+    return reversed === str;
+ }

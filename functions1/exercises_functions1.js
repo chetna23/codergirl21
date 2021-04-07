@@ -12,7 +12,7 @@ function makeLine(size) {
 //     let display = '';
 //     for(let i = 0; i < size; i++) {
         
-//         display += makeLine(size);
+//         display += makeLine(size) + '\n';
 //         if( i < size -1) {
 //             display += '\n';
 //         }
@@ -33,7 +33,7 @@ function makeRectangle(length, breadth) {
     return display;
 }
 
-// console.log(makeRectangle(5,3));
+console.log(makeRectangle(5,3));
 
 function makeSquare(size) {
     return makeRectangle(size, size);
