@@ -11,7 +11,7 @@
 // Replace the strings with "ARRR!"
 // Print the new array to confirm yer work.
 
-let transform = function(original) {
+function transform(original) {
     if(typeof(original) === 'number') {
         return original*3;
     } else if(typeof(original) === 'string') {
@@ -19,10 +19,14 @@ let transform = function(original) {
     } else return original;
 }
 
-console.log(transform(2));
+// console.log(transform(2));
 
-console.log(transform('ABcd'));
+// console.log(transform('ABcd'));
+
+// console.log(transform(true));
+
+// console.log(transform(['ABcd', 0]));
 
 let orgArray = ['Elocution', 21, 'Clean teeth', 100];
-let modifiedArr = orgArray.map(transform);
+let modifiedArr = orgArray.map(n => transform(n));
 console.log(modifiedArr);

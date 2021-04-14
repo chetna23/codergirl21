@@ -50,14 +50,16 @@ function checkFuel(level) {
         return level
      }
  }
- console.log(sumFuel(2400));
+//  console.log(sumFuel(2400));
+//  console.log(sumFuel(500000));
+//  console.log(sumFuel(74000));
 
  let sumCargo = function(cargoArray) {
     console.log(cargoArray);
      let modifiedArray = [];
      let numberItemsSwapped = 0;
         for(let i=0; i < cargoArray.length; i++) {
-            if(cargoArray[i] !== 'water') {
+            if(cargoArray[i] !== 'water' && cargoArray[i] !== 'space suits') {
                 if(numberItemsSwapped >= 2) break;
                 modifiedArray.push(cargoArray[i]);
                 numberItemsSwapped++;
@@ -66,7 +68,7 @@ function checkFuel(level) {
      return modifiedArray;
  }
 
- console.log(sumCargo(cargoHold));
+console.log(sumCargo(cargoHold));
 
  function irs(fuelLevel, cargoHold) {
     //  let sum = sumFuel(fuelLevel);
@@ -75,3 +77,5 @@ function checkFuel(level) {
  }
 
  irs(fuelLevel, cargoHold);
+
+ console.log(cargoHold);
