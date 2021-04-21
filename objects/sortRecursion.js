@@ -30,3 +30,10 @@ function _mergeSort(array) {
 // console.log(_mergeSort([100,23,0,5,78,120,45]));
 
 console.log(_mergeSort([3, 2, 1]));
+let nums1 = [5, 10, 2, 42];
+  let nums2 = [-2, 0, -10, -44, 5, 3, 0, 3];
+  let nums3 = [200, 5, 4, 10, 8, 5, -3.3, 4.4, 0];
+
+  // console.log(_mergeSort(nums1));
+  // console.log(_mergeSort(nums2));
+  // console.log(_mergeSort(nums3));
