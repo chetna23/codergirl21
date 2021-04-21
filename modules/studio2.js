@@ -71,15 +71,15 @@ function orbitCircumference(radius){
   let crew = [candidateA,candidateC,candidateE];
   
   //Randomly select one crew member to perform a spacewalk.
-  let walker = crew[Math.floor(Math.random()*crew.length)];
+  // let walker = crew[Math.floor(Math.random()*crew.length)];
     
   //Bonus code: Uncomment to activate.
-  // walker = crew[0];
-  // for (i=1; i<crew.length; i++){
-  //   if (crew[i].o2Used < walker.o2Used){
-  //     walker = crew[i];
-  //   }
-  // }
+  walker = crew[0];
+  for (i=1; i<crew.length; i++){
+    if (crew[i].o2Used < walker.o2Used){
+      walker = crew[i];
+    }
+  }
   
   // Use the animal’s o2Used method to calculate how much oxygen it consumes during the spacewalk. Round the answer to 3 decimal places.
   console.log(oxygenExpended(walker));
