@@ -1,7 +1,9 @@
 function randomFromArray(arr){
-    
-    return arr[Math.floor(Math.random()*arr.length)]
+  let index = Math.floor(Math.random()*arr.length);
+    return arr[index];
   }
   
   //TODO: Export the randomFromArray function.
-  module.export = randomFromArray;
+  module.exports = {
+    randomFromArray: randomFromArray
+  };

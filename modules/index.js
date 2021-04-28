@@ -4,6 +4,7 @@ const averages = require('./ScoreCalcs/averages');//Import functions from averag
 const printAll = require('./display');
 const randomSelect = require('./randomSelect');//Import function from randomSelect.js.
 const { averageForStudent } = require('./ScoreCalcs/averages');
+const { type } = require('node:os');
 
 //Candidate data:
 let astronauts = ['Fox','Turtle','Cat','Hippo','Dog'];
@@ -32,7 +33,8 @@ for (let i = 0; i<prompts.length; i++){
         console.log(`${astronauts[j]}'s test average = ${avg}%.`);
       }
     } else {
-      let walker = randomFromArray(astronauts); //Call 'randomSelect' to pick a spacewalker from the astronauts array.
+      // console.log(typeof(randomFromArray));
+      let walker = randomSelect.randomFromArray(astronauts); //Call 'randomSelect' to pick a spacewalker from the astronauts array.
       console.log(`${walker} is the next spacewalker.`);
     }
   } else {

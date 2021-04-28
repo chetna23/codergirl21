@@ -1,7 +1,4 @@
 // Unit Testing Exercises #3
-
-
-
 // One new it statement is needed of P1 & P2 are validated together.
 // For the separate validation used above, two it statements are needed.
 const test = require('../RPSBonus.js');
@@ -27,12 +24,28 @@ describe("whoWon", function(){
    it("returns 'TIE!' if P1 & P2 choose the same option.", function(){
       let outputs = [];
       outputs.push(test.whoWon('rock','rock'));
-      outputs.push(test.whoWon('paper','paper'));
-      outputs.push(test.whoWon('scissors','scissors'));
+      outputs.push(test.whoWon('paper','scissors'));
+      outputs.push(test.whoWon('scissors','rock'));
       for (let i = 0; i < outputs.length; i++) {
          assert.strictEqual(outputs[i], "TIE!");
       }      
    });
+
+   it("returns 'TIE!' if P1 & P2 choose the same option.", function(){
+      let output = test.whoWon('rock','rock');
+      assert.strictEqual(output, "TIE!");
+   });
+
+   it("returns 'TIE!' if P1 & P2 choose the same option.", function(){
+      let output = test.whoWon('paper','paper');
+      assert.strictEqual(output, "TIE!");
+   });
+
+   it("returns 'TIE!' if P1 & P2 choose the same option.", function(){
+      let output = test.whoWon('scissors','scissors');
+      assert.strictEqual(output, "TIE!");
+   });
+   
 
    it("returns 'Player 1 wins!' if the P2 win checks and TIE check all return false.", function(){
       let outputs = [];
