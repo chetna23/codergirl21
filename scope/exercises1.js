@@ -7,9 +7,9 @@ function divide(num, den) {
 }
 console.log(divide(10,2));
 console.log(divide(10,5));
-try{
+// try{
     console.log(divide(10,0));
-} catch(e) {
-    console.log('Caught Error', e)
-}
+// } catch(err) {
+//     console.log('Caught Error', err.message)
+// }
 
