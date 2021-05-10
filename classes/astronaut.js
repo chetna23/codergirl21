@@ -1,21 +1,21 @@
 class Astronaut {
-    constructor(name, age, mass){
+    constructor(mass = 50, name, age){
        this.name = name;
        this.age = age;
        this.mass = mass;
     }
  }
  
- let fox = new Astronaut('Fox', 7, 12);
- let hippo = new Astronaut('Hippo', 25, 1500);
+ let fox = new Astronaut(12, 'Fox', 7);
+ let hippo = new Astronaut(1500, 'Hippo', 25);
  
  console.log(typeof hippo, typeof fox);
  
  console.log(hippo, fox);
 
  //missing values
- let tortoise = new Astronaut('Speedy', 120);
+ let tortoise = new Astronaut('Speedy', age=120);
 
-console.log(tortoise.name, tortoise.age, tortoise.mass);
+console.log(tortoise);
 
 //can add default values.
