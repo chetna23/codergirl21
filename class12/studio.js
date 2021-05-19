@@ -37,15 +37,16 @@ class CrewCandidate {
 let bubba = new CrewCandidate('Bubba Bear', 135, [88, 85, 90]);
 let merry = new CrewCandidate('Merry Maltese', 1.5, [93, 88, 97]);
 let glad = new CrewCandidate('Glad Gator', 225, [75, 78, 62]);
-
+// console.log(bubba);
 bubba.addScore(83);
-console.log(bubba.average());
-console.log(merry.average());
-console.log(glad.average());
+// console.log(bubba);
+// console.log(bubba.average());
+// console.log(merry.average());
+// console.log(glad.average());
 
-console.log(bubba.status());
-console.log(merry.status());
-console.log(glad.status());
+// console.log(bubba.status());
+// console.log(merry.status());
+// console.log(glad.status());
 //Add methods for adding scores, averaging scores and 
 //determining candidate status as described in the 
 //studio activity.
@@ -55,12 +56,12 @@ console.log(glad.status());
 //reach Reserve status? How many to reach Accepted? 
 // Remember, scores cannot exceed 100%.
 let numberOfScoresAdded = 0;
-while(glad.average() < 80) {
-    glad.addScore(85);
+while(glad.average() < 90) {
+    glad.addScore(92);
     numberOfScoresAdded++;
 }
 console.log(glad.average());
 console.log(numberOfScoresAdded);
 
-console.log(glad.printStatus());
+// console.log(glad.printStatus());
 
