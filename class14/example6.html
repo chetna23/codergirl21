@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <title>Button click handler</title>
+   <script>
+         function youRang() {
+            document.getElementById("main-text").innerHTML += "you rang...";
+            console.log("you rang...");
+         }
+   </script>
+</head>
+<body>
+   <h1>demo header</h1>
+   <p id="main-text" class="orange" style="font-weight: bold;">
+         a bunch of really valuable text...
+   </p>
+   <button onclick="youRang();">Ring Bell</button>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Window Load Event</title>
+   <script>
+      // add load event handler to window
+      window.addEventListener("load", function() {
+          // put DOM code here to ensure elements have been loaded
+          console.log('window loaded');
+
+          let ring = document.getElementById("ring-button");
+          ring.addEventListener("click", function (event) {
+              console.log("ring ring");
+          });
+
+          let knock = document.getElementById("knock-button");
+          knock.addEventListener("click", function (event) {
+              console.log("knock knock");
+          });
+      });
+   </script>
+</head>
+<body>
+   <div id="toolbar">
+      <button id="ring-button">Ring Bell</button>
+      <button id="knock-button">Knock on Door</button>
+   </div>
+</body>
+</html>

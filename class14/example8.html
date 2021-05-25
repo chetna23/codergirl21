@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Event Bubbling</title>
+   <style>
+      #toolbar {
+          padding: 20px;
+          border: 1px solid black;
+          background-color:darkcyan;
+      }
+  </style>
+</head>
+<body>
+   <div id="toolbar">
+      <button id="ring-button">Ring Bell</button>
+   </div>
+   <script>
+      let button = document.getElementById("ring-button");
+      button.addEventListener("click", function (event) {
+          console.log("button clicked");
+      });
+      document.getElementById("toolbar").addEventListener("click", function (event) {
+          console.log("toolbar clicked");
+      });
+      document.addEventListener("click", function (event) {
+          console.log("document clicked");
+      });
+   </script>
+</body>
+</html>

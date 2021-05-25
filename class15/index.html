@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Rocket Simulation</title>
+    <style>
+      label { display: block; margin-bottom: 7px;}
+    </style>
+    <script src = "script.js"></script>
+  </head>
+  <body>
+    <form action="https://handlers.education.launchcode.org/request-parrot" method="POST">
+      <label>Test name <input type="text" name="testName"/></label>
+      <label>Test Date <input type="date" name="testDate"/></label>
+      <label>Rocket Type
+            <select name="rocketType">
+                <option value="Brant">Brant</option>
+                <option value="Lynx">Lynx</option>
+                <option value="Orion">Orion</option>
+                <option value="Terrier">Terrier</option>
+            </select>
+        </label>
+        <label>Number of Rocket Boosters <input type="number" min="1" max="10" name="boosterCount"/></label>
+        <div>Wind Rating:</div>
+        <label>No wind<input type="radio" name="windRating" value="0"/></label>
+        <label>Mild<input type="radio" name="windRating" value="10"/></label>
+        <label>Strong<input type="radio" name="windRating" value="20"/></label>
+        <div>Use production grade servers
+          <input type="checkbox" name="productionServers"/></label>
+       </div>
+        <button>Submit</button>
+    </form>
+  </body>
+  
+</html>
+
+<!-- /* Create a <form> with these attributes.
+    Set method to "POST"
+    Set action to "https://handlers.education.launchcode.org/request-parrot"
+    Add a <label> and <input> for Test Name to the <form>.
+    <label>Test Name <input type="text" name="testName"/></label>.
+    Display Name	Input Type	Input Name	Possible Values
+    Test Name	text	testName	No limitations
+    Can you submit the form now? What is missing?
+    Add a <button>Run Simulation</button> to the <form>.
+    Enter a value into the "testName" input and submit the form.
+    Was the value properly submitted to the form handler?
+    Next add these five inputs to the <form>.
+    Pay attention to the types and possible options.
+    Also add a <label> for each input. */ -->

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>DOM Examples</title>
+   </head>
+   <body>
+      <h1>getElementById Example</h1>
+      <p id="description" name="test">
+         This will be turned blue.
+      </p>
+      <p name="test">
+            My name is Cool Kid.
+         </p>
+      <script>
+         let paragraph = document.getElementById("description");
+         console.log("paragraph contents:", paragraph.innerHTML.trim());
+         paragraph.style.color = "blue";
+         console.log(paragraph.getAttribute("name"));
+         paragraph.setAttribute("name", "blue");
+         console.log(paragraph.getAttribute("name"));
+      </script>
+   </body>
+</html>

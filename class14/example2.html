@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <title>Add content using DOM</title>
+</head>
+<body>
+      <p id="main-text">Words about things...</p>
+      <script>
+         let p = document.getElementById("main-text");
+         p.append("More words about things");
+         console.log(p.innerHTML);
+      </script>
+</body>
+</html>

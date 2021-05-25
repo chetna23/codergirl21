@@ -8,5 +8,24 @@ Use a CSS id to change the elements in the ordered list to a color of your choos
 https://i.imgur.com/qdUOiHh.png < BUT! you need to include "background-repeat: repeat" or 
 else it won't work properly
 */
-
+body {
+    background-color: gold;
+    background-image: url('brazil.jpg');
+    background-repeat: no-repeat;
+}
+p {
+    color: green;
+}
+h1 {
+    font-size: 36px;
+}
+h1, h2 {
+    text-align: center;
+}
+#cool-text {
+    color: blue;
+}
+#list-text {
+    color: purple;
+}
 
