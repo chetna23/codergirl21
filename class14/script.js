@@ -8,22 +8,17 @@ function init () {
     paragraph = document.querySelector("p");
 
     // Put your code for the exercises here.
-
     button.addEventListener("click", liftoff);
 
     missionAbort.addEventListener("mouseover", function(event) {
-        let element = event.target;
-        element.style.background = "red";
+        event.target.style.backgroundColor = "red";
     })
 
     missionAbort.addEventListener("mouseout", function(event) {
-        let element = event.target;
-        element.style.background = "";
+        event.target.style.backgroundColor = "";
     })
 
-    missionAbort.addEventListener("click", function(event) {
-        console.log(window.confirm("Are you sure you want to abort the mission"));
-    })
+    missionAbort.addEventListener("click", blah)
 }
 
 window.addEventListener("load", init);
@@ -31,6 +26,16 @@ window.addEventListener("load", init);
 
 function liftoff() {
     paragraph.innerHTML = "Houston, we have lift off!";
+}
+
+function blah(event) {
+    let answer = window.confirm("Are you sure you want to abort the mission?");
+        if(answer === true) {
+            paragraph.innerHTML = "Mission aborted! Space shuttle returning home.";
+        } else {
+            paragraph.innerHTML = "Mission continues...";
+        }
+        console.log(answer);
 }
 // When the "Take off" button is clicked, 
 // the text "The shuttle is on the ground" changes to 
