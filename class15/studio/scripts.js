@@ -10,6 +10,7 @@ window.addEventListener("load", function() {
     let bg = document.getElementById('shuttleBackground');
 
     let right = this.document.getElementById('right');
+    let movement; 
     right.addEventListener("click", function () {
         movement = parseInt(imgObj.style.left) + 10 + 'px';
         imgObj.style.left = movement;
