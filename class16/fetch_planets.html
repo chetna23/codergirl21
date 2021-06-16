@@ -3,7 +3,9 @@
    <head>
       <title>Fetch Planets</title>
       <script>
-         fetch("https://handlers.education.launchcode.org/static/planets.json").then(function(response) {
+         window.addEventListener("load", function() {
+        let json = [];
+        fetch("https://handlers.education.launchcode.org/static/planets.json").then(function(response) {
    response.json().then(function(json) {
       const destination = document.getElementById("destination");
       let index = 0;
@@ -15,9 +17,11 @@
             </div>
          `;
          index = (index + 1) % json.length;
+         console.log(index);
       });
    });
           });
+});
       </script>
    </head>
    <body>
